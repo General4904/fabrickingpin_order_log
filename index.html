@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Log</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <h2>Fabric_Kingpin Order Log</h2>
+
+    <div class="form-container">
+        <p id="date"></p>
+        <input type="text" id="customer" placeholder="Customer Name">
+        <input type="text" id="fabric" placeholder="Fabric Type">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Fabric Type</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="orderTableBody"></tbody>
+    </table>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
